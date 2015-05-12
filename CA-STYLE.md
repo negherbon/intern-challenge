@@ -33,7 +33,7 @@ Para conhecê-las, acesse: https://sites.google.com/a/contaazul.com/docs/padroes
 ### Requisitos dessa tarefa
 
 1. A marcação HTML deve respeitar nosso grid e os componentes usados no formulário devem respeitar os padrões conforme descrito em: http://estilo.contaazul.local/#/formularios (Use a imagem [mockup-grided-with-cols](https://raw.githubusercontent.com/ContaAzul/intern-challenge/master/mockup/mockup-grided-with-cols.png) para medir a colunagem `<span="col*">` e os afastamentos `<span="offset*">`)
-2. Você deverá o mesmo arquivo CSS usado na aplicação. Para tal, insira as seguintes tags `<link>` no `<head>`: 
+2. Você deverá usar o mesmo arquivo CSS usado na aplicação. Para tal, insira as seguintes tags `<link>` no `<head>`: 
 ```
 <link rel="stylesheet" href="https://cdn.contaazul.com/static/dependencies/bootstrap/css/bootstrap.css">
 <link rel="stylesheet" href="https://cdn.contaazul.com/static/css/contaazul.css">
