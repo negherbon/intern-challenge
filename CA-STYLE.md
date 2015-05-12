@@ -11,7 +11,7 @@ Através dessas instruções básicas, você deverá ser capaz de:
 - Abrir um *Pull Request* conforme as boas práticas que conservamos no ContaAzul.
 
 #### Guia de Estilo
-No ContaAzul temos um *Guia de Estilo* que documenta basicamente a maioria dos componentes que usamos nas telas: *Grade, Tipografia, Botões, Tabelas, Ícones, Elementos de Formulário, etc.
+No ContaAzul temos um *Guia de Estilo* que documenta basicamente a maioria dos componentes que usamos nas telas: *Grade, Tipografia, Botões, Tabelas, Ícones, Elementos de Formulário*, etc.
 Para acessá-lo, acesse o endereço: http://estilo.contaazul.local
 
 #### Grid
@@ -38,6 +38,6 @@ Para conhecê-las, acesse: https://sites.google.com/a/contaazul.com/docs/padroes
 <link rel="stylesheet" href="https://cdn.contaazul.com/static/dependencies/bootstrap/css/bootstrap.css">
 <link rel="stylesheet" href="https://cdn.contaazul.com/static/css/contaazul.css">
 ```
-3. Caso você precise escrever CSS adicionais (para a barra superior ou rodapé, por exmeplo), deverá ser escrito utilizando LESS.
+3. Caso você precise escrever CSS adicionais (para a barra superior ou rodapé, por exemplo), deverá ser escrito utilizando LESS.
 4. CSS adicionais deverão ter uma tag `<link>` exclusiva, estar minificados e nomeados como `prototype.min.css`
 5. Boa sorte!
