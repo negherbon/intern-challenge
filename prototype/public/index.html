@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>HTML&CSS</title>
+
+    <!-- Conta Azul default files -->
+    <link rel="stylesheet" href="https://cdn.contaazul.com/static/dependencies/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdn.contaazul.com/static/css/contaazul.css" />
+
+    <!-- build:css css/prototype.min.css -->
+    <link rel="stylesheet" href="css/prototype.css" />
+    <!-- endbuild -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <span class="logo"></span>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <ol class="breadcrumb">
+            <li><a href="#"> Início </a></li>
+            <li><a href="#"> Conta Bancária </a></li>
+            <li class="current"> Nova </li>
+        </ol>
+
+
+        <div class="content">
+            <div class="row">
+                <div class="span10">
+                    <h3 class="title"> Conta Bancária </h3>
+
+                    <form id="formAccount">
+
+
+                        <fieldset>
+                            <div class="row">
+                                <div class="span4">
+                                    <label>Nome do Banco</label>
+                                    <input type="text" class="span4" name="name" placeholder="Digite aqui o nome do banco" />
+                                </div>
+                                <div class="span4">
+                                    <label>Tipo de conta</label>
+
+                                    <label class="radio inline span2 margin-left-0">
+                                        <input type="radio" name="accountType" checked /> Pessoa física
+                                    </label>
+
+                                    <label class="radio inline">
+                                        <input type="radio" name="accountType" /> Pessoa jurídica
+                                    </label>
+                                </div>
+                                <div class="span2"></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="span7">
+                                    <label>Descrição</label>
+                                    <input type="text" class="span7" name="description" placeholder="Digite aqui uma curta descrição para o banco" />
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <label> Você deve optar por definir um saldo inicial. Este valor aparecerá como seu primeiro lançamento. </label>
+
+                            <div class="row">
+
+                                <div class="span4">
+                                    <label>Saldo</label>
+                                    <input type="text" class="span4" name="value" placeholder="Informe aqui o valor do saldo inicial" />
+                                </div>
+
+                                <div class="span4">
+                                    <label>Data</label>
+                                    <input type="text" class="span4" name="date" placeholder="Informe aqui a data do saldo inicial" />
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="actions">
+            <div class="row">
+                <div class="span2 pull-left">
+                    <button class="flat-btn span2" type="button">
+                        Cancelar
+                    </button>
+                </div>
+                <div class="span6 pull-right">
+                    <button class="flat-btn span4" type="button">
+                        Salvar esta conta e adicionar outra
+                    </button>
+
+                    <button class="flat-btn flat-btn-primary span2 pull-right" type="button">
+                        Salvar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>
