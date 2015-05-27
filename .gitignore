@@ -94,6 +94,8 @@ bower_components
 ### NPM ###
 prototype/node_modules
 
+### .IDEA ###
+.idea
 
 ### Jboss ###
 jboss/server/all/deploy/project.ext
