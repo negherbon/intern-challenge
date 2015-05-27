@@ -1,36 +1,19 @@
-/* Variables */
-@color-blue: #2687e9;
-@color-blue-dark: #385a7b;
-@color-text-total-value-dash-portlet-green: #4aba58;
-@color-placeholder-default: #c9d3dd;
-@color-bg-tr-hover-dash-portlet: #F1F4F9;
-@color-grey-light: #fcfdfe;
-@container-width: 940px;
-@spaceBetweenRows: 40px;
-/* End Variables */
+@import "variables.less";
+@import "mixins.less";
 
-/* Geral */
 
 button:hover, button:focus, button:active{
   opacity: 0.75;
 }
 
 .margin-left-0{
-  margin-left: 0px;
-}
-
-.pull-right{
-  float: right;
-}
-
-.pull-left{
-  float: left;
+  margin-left: 0;
 }
 
 label{
   line-height: 23px;
 }
-/* End Geral*/
+
 
 body{
   background-color: @color-bg-tr-hover-dash-portlet;
@@ -52,6 +35,8 @@ header{
   background: url('../images/logo-ca.png') center no-repeat;
 }
 
+
+
 /* End Header */
 
 .container{
@@ -67,11 +52,11 @@ header{
   margin-top: 40px;
   margin-bottom: 40px;
   background-color: @color-bg-tr-hover-dash-portlet;
-  padding: 0px;
+  padding: 0;
 }
 
 .breadcrumb li:not(:last-child):after{
-  content: ">";
+  content: "›";
   color: @color-blue-dark;
   padding-left: 5px;
   padding-right: 5px;
@@ -94,66 +79,51 @@ header{
 .title{
   text-transform: uppercase;
   padding-bottom: 50px;
-  margin: 0px;
+  margin: 0;
 }
 
 .content{
-  padding: 70px 80px 70px 80px;
+  padding: 70px 80px;
   background: @color-grey-light;
   width: 100%;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  border-top: 1px solid #c9d3dd;
-  border-left: 2px solid #e4e9ee;
-  border-bottom: 2px solid #e4e9ee;
-  border-right: 2px solid #e4e9ee;
+  border: 1px solid @color-placeholder-default;
+  .box-sizing(border-box);
 }
 
-.span12{
-  box-sizing: border-box;
-}
-
-#formAccount .row > div > label{
+.field-label{
   margin-bottom: 20px;
 }
 
-#formAccount .row:not(:last-child) {
-  margin-bottom: @spaceBetweenRows;
+.form-default .row:not(:last-child) {
+  margin-bottom: @space-between-rows;
 }
 
-#formAccount input[type=text]{
-  margin-bottom: 0px;
+.form-default input[type=text]{
+  margin-bottom: 0;
 }
 
-#formAccount fieldset:nth-child(1){
+.form-default fieldset:not(:last-child){
   padding-top: 40px;
   padding-bottom: 40px;
   border-top: 2px dotted @color-placeholder-default;
   border-bottom: 2px dotted @color-placeholder-default;
-  margin-bottom: @spaceBetweenRows;
+  margin-bottom: @space-between-rows;
 }
 
-#formAccount fieldset:nth-child(2) > label{
+.txt-label{
   margin-bottom: 30px;
 }
-
-
 /* End Content */
 
 .actions{
-  margin-top: @spaceBetweenRows;
-  margin-bottom: @spaceBetweenRows;
+  margin-top: @space-between-rows;
+  margin-bottom: @space-between-rows;
 }
 
-/* Footer */
-
-footer{
+#footer{
   border-top: 2px solid #e0e6ec;
   background: url('../images/logo-ca-footer.png') center no-repeat;
   height: 40px;
   margin-bottom: 20px;
 }
-
-/* End Footer */
 

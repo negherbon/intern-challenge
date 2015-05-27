@@ -1,24 +1,14 @@
-/* Variables */
-/* End Variables */
-/* Geral */
 button:hover,
 button:focus,
 button:active {
   opacity: 0.75;
 }
 .margin-left-0 {
-  margin-left: 0px;
-}
-.pull-right {
-  float: right;
-}
-.pull-left {
-  float: left;
+  margin-left: 0;
 }
 label {
   line-height: 23px;
 }
-/* End Geral*/
 body {
   background-color: #f1f4f9;
 }
@@ -46,10 +36,10 @@ header {
   margin-top: 40px;
   margin-bottom: 40px;
   background-color: #f1f4f9;
-  padding: 0px;
+  padding: 0;
 }
 .breadcrumb li:not(:last-child):after {
-  content: ">";
+  content: "›";
   color: #385a7b;
   padding-left: 5px;
   padding-right: 5px;
@@ -67,40 +57,34 @@ header {
 .title {
   text-transform: uppercase;
   padding-bottom: 50px;
-  margin: 0px;
+  margin: 0;
 }
 .content {
-  padding: 70px 80px 70px 80px;
+  padding: 70px 80px;
   background: #fcfdfe;
   width: 100%;
+  border: 1px solid #c9d3dd;
   box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  border-top: 1px solid #c9d3dd;
-  border-left: 2px solid #e4e9ee;
-  border-bottom: 2px solid #e4e9ee;
-  border-right: 2px solid #e4e9ee;
+  -webkit-box-sizing: border-box;
 }
-.span12 {
-  box-sizing: border-box;
-}
-#formAccount .row > div > label {
+.field-label {
   margin-bottom: 20px;
 }
-#formAccount .row:not(:last-child) {
+.form-default .row:not(:last-child) {
   margin-bottom: 40px;
 }
-#formAccount input[type=text] {
-  margin-bottom: 0px;
+.form-default input[type=text] {
+  margin-bottom: 0;
 }
-#formAccount fieldset:nth-child(1) {
+.form-default fieldset:not(:last-child) {
   padding-top: 40px;
   padding-bottom: 40px;
   border-top: 2px dotted #c9d3dd;
   border-bottom: 2px dotted #c9d3dd;
   margin-bottom: 40px;
 }
-#formAccount fieldset:nth-child(2) > label {
+.txt-label {
   margin-bottom: 30px;
 }
 /* End Content */
@@ -108,11 +92,9 @@ header {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-/* Footer */
-footer {
+#footer {
   border-top: 2px solid #e0e6ec;
   background: url('../images/logo-ca-footer.png') center no-repeat;
   height: 40px;
   margin-bottom: 20px;
 }
-/* End Footer */

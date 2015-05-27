@@ -1,7 +1,3 @@
-/**
- * Created by rafaelnegherbon on 5/26/15.
- */
-
 module.exports = function(grunt){
 
     grunt.initConfig({
@@ -9,13 +5,16 @@ module.exports = function(grunt){
             public: {
                 expand: true,
                 cwd: 'public',
-                src: '**', // globbing pattern, copy all files and folders
+                src: ['**', '!**/less/**'],
                 dest: 'dist'
             }
         },
         clean: {
             dist: {
                 src: 'dist'
+            },
+            dist_unnecessary_files:{
+                src: ['dist/css/prototype.css']
             }
         },
         useminPrepare: {
@@ -28,7 +27,7 @@ module.exports = function(grunt){
             compilar: {
                 expand: true,
                 cwd: 'public/less',
-                src: ['**/*.less'],
+                src: ['prototype.less'],
                 dest: 'public/css',
                 ext: '.css'
             }
@@ -37,7 +36,7 @@ module.exports = function(grunt){
 
     grunt.registerTask('dist', ['clean', 'copy']);
     grunt.registerTask('minifica', ['useminPrepare', 'concat', 'cssmin', 'usemin']);
-    grunt.registerTask('default', ['less', 'dist', 'minifica']);
+    grunt.registerTask('default', ['less', 'dist', 'minifica', 'clean:dist_unnecessary_files']);
 
     // carregando tasks
     grunt.loadNpmTasks('grunt-contrib-copy');
